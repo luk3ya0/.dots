@@ -1,0 +1,35 @@
+#!/bin/bash
+
+case "$1" in
+
+    -t|--tuna)
+        # step 1
+        cd "$(brew --repo)"
+        git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+        
+        # step 2
+        cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+        git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+        
+        # step 3
+        brew update
+        ;;
+
+    -r|--recover)
+        cd "$(brew --repo)"
+        git remote set-url origin https://github.com/Homebrew/brew.git
+
+        cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+        git remote set-url origin https://github.com/Homebrew/homebrew-core
+
+        brew update
+        ;;
+    *)
+        echo 'Usage: ./config [command]'
+        echo 'command:'
+        echo '-t'
+        echo '  -tuna'
+        echo '-r'
+        echo '  --recover'
+        ;;
+esac
