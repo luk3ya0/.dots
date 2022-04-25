@@ -75,3 +75,7 @@ alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH=/Applications/Hammerspoon.app/Contents/Frameworks/hs:$PATH
 
 export PATH="/usr/local/mysql/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
