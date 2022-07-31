@@ -19,7 +19,7 @@ alias urlde='python3 -c "import sys, urllib.parse as ulp; print(ulp.unquote(sys.
 alias nadb="/Applications/Nox\ App\ Player.app/Contents/MacOS/adb"
 alias vi='nvim'
 alias vim='nvim'
-alias ls='ls -G'
+alias ls='ls -G --color'
 
 # alias go='http_proxy=http://127.0.0.1:1087/ https_proxy=http://127.0.0.1:1087/ no_proxy=localhost,127.0.0.0/8,::1 go'
 

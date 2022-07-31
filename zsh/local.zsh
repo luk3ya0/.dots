@@ -12,31 +12,31 @@ export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com,www.bilibili.c
 export FLINK_HOME="/Library/Flink/flink-1.10.0"
 
 # java environment
-export JAVA_HOME=$(/usr/libexec/java_home)
-export CLASSPATH=.:$JAVA_HOME/lib:$FLINK_HOME/lib # :$JRE_HOME/lib
-export PATH=$PATH:$JAVA_HOME/bin:$FLINK_HOME/bin  # :$JRE_HOME/bin
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export CLASSPATH=.:$JAVA_HOME/lib:$FLINK_HOME/lib # :$JRE_HOME/lib
+# export PATH=$PATH:$JAVA_HOME/bin:$FLINK_HOME/bin  # :$JRE_HOME/bin
 # maven environment
-export MAVEN_HOME="/opt/homebrew/Cellar/maven/3.8.1"
-export PATH=$PATH:$MAVEN_HOME/bin
+# export MAVEN_HOME="/opt/homebrew/Cellar/maven/3.8.1"
+# export PATH=$PATH:$MAVEN_HOME/bin
 
 # scala environment
-export SCALA_HOME="/Library/Scala/scala-2.13.3"
-export PATH=$PATH:$SCALA_HOME/bin
+# export SCALA_HOME="/Library/Scala/scala-2.13.3"
+# export PATH=$PATH:$SCALA_HOME/bin
 
 # go env
-export GO111MODULE="on"
-export GOROOT="/opt/homebrew/opt/go/libexec"
-export GOBIN=$GOROOT/bin
-export GOARCH=arm64
-export GOOS=darwin
-export GOPATH=$HOME/.gopher
-export GO111MODULE=on
-export GOPROXY=https://proxy.golang.org
-export PATH=$PATH:$GOBIN:$GOPATH/bin/darwin_arm64
+# export GO111MODULE="on"
+# export GOROOT="/opt/homebrew/opt/go/libexec"
+# export GOBIN=$GOROOT/bin
+# export GOARCH=arm64
+# export GOOS=darwin
+# export GOPATH=$HOME/.gopher
+# export GO111MODULE=on
+# export GOPROXY=https://proxy.golang.org
+# export PATH=$PATH:$GOBIN:$GOPATH/bin/darwin_arm64
 
 # rabbitmq
-export RABBIT_HOME="/usr/local/Cellar/rabbitmq/3.8.2"
-export PATH="$RABBIT_HOME/sbin:$PATH"
+# export RABBIT_HOME="/usr/local/Cellar/rabbitmq/3.8.2"
+# export PATH="$RABBIT_HOME/sbin:$PATH"
 
 # tldr
 export TLDR_HEADER='magenta bold underline'
@@ -79,3 +79,4 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
