@@ -36,4 +36,22 @@ Since my display is about 32inch, so I need yabai to till-manage my windows not 
 
 ### Test for github text
 
-$E = mc^2$
+text inline: $E = mc^2$
+
+tikz:
+
+$$
+\begin{tikzpicture}
+
+\def \n {5}
+\def \radius {3cm}
+\def \margin {8} % margin in angles, depends on the radius
+
+\foreach \s in {1,...,\n}
+{
+  \node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+\end{tikzpicture}
+$$
