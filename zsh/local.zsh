@@ -24,15 +24,13 @@ export FLINK_HOME="/Library/Flink/flink-1.10.0"
 # export PATH=$PATH:$SCALA_HOME/bin
 
 # go env
-# export GO111MODULE="on"
-# export GOROOT="/opt/homebrew/opt/go/libexec"
-# export GOBIN=$GOROOT/bin
-# export GOARCH=arm64
-# export GOOS=darwin
-# export GOPATH=$HOME/.gopher
-# export GO111MODULE=on
-# export GOPROXY=https://proxy.golang.org
-# export PATH=$PATH:$GOBIN:$GOPATH/bin/darwin_arm64
+export GO111MODULE="on"
+export GOROOT="/usr/local/go"
+export GOBIN=$GOROOT/bin
+export GOARCH=arm64
+export GOPATH=$HOME/.gopher
+export GOPROXY=https://proxy.golang.org
+export PATH="$PATH:$GOBIN:$GOPATH/bin"
 
 # rabbitmq
 # export RABBIT_HOME="/usr/local/Cellar/rabbitmq/3.8.2"
