@@ -1,9 +1,22 @@
 #!/usr/bin/env sh
+# the scripting-addition must be loaded manually if
+# you are running yabai on macOS Big Sur. Uncomment
+# the following line to have the injection performed
+# when the config is executed during startup.
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# .. more yabai startup stuff
 
 # kill hammerspon before the restarting
 ps -ef | grep -v grep | grep Hammerspoon.app | awk '{ print $2 }' | xargs kill -9
 
 echo "killed the hammerspoon"
+
 
 yabai -m config layout stack
 
@@ -14,7 +27,42 @@ yabai -m config right_padding   60
 yabai -m config window_gap      20
 
 # rules for app sent to ...
-yabai -m rule --add app=Emacs display=3
+# yabai -m rule --add app=Emacs display=3
+yabai -m rule --add app='System Preferences' manage=off
+yabai -m rule --add app='System Preferences' title='Appearance' manage=off
+yabai -m rule --add app='Stats' manage=off
+yabai -m rule --add app='Shadowrocket' manage=off
+yabai -m rule --add app='Color Picker' manage=off
+yabai -m rule --add app='ColorSlurp' manage=off
+yabai -m rule --add app='Simulator' manage=off
+
+yabai -m rule --add app='Safari' title='Extensions' manage=off
+yabai -m rule --add app='Safari' title='Rename' manage=off
+yabai -m rule --add app='Safari' title='General' manage=off
+yabai -m rule --add app='Safari' title='Tabs' manage=off
+yabai -m rule --add app='Safari' title='Advanced' manage=off
+yabai -m rule --add app='Safari' title='Passwords' manage=off
+yabai -m rule --add app='Safari' title='Search' manage=off
+yabai -m rule --add app='Safari' title='Privacy' manage=off
+yabai -m rule --add app='Safari' title='Websites' manage=off
+yabai -m rule --add app='Safari' title='Security' manage=off
+yabai -m rule --add app='Safari' title='AutoFill' manage=off
+
+yabai -m rule --add app='PyCharm' title='Rename' manage=off
+yabai -m rule --add app='PyCharm' title='Delete' manage=off
+yabai -m rule --add app='PyCharm' title='Add File to Git' manage=off
+yabai -m rule --add app='PyCharm' title='Move' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Delete' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Rename' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Preferences' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Move' manage=off
+
+yabai -m rule --add app='WPS Office' subrole='AXDialog' manage=off
+
+yabai -m rule --add app='WeChat' manage=off
+yabai -m rule --add app='HextEdit' manage=off
+yabai -m rule --add app='Clock' manage=off
 
 echo "yabai configuration loaded.."
 
