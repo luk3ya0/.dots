@@ -20,6 +20,7 @@ alias nadb="/Applications/Nox\ App\ Player.app/Contents/MacOS/adb"
 alias vi='nvim'
 alias vim='nvim'
 alias ls='ls -G --color'
+alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 
 # alias go='http_proxy=http://127.0.0.1:1087/ https_proxy=http://127.0.0.1:1087/ no_proxy=localhost,127.0.0.0/8,::1 go'
 

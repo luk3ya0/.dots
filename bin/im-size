@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+python3 ~/.dots/bin/im-size.py $@ 
+
+# echo "-- \$* demo ---"
+# for i in "$*"; do
+#     echo $i
+# done
+
+# -- $* demo ---
+# 1 2 3
+
+# echo "-- \$@ demo ---"
+# for i in "$@"; do
+#     echo $i
+# done
+
+# -- $@ demo ---
+# 1
+# 2
+# 3

@@ -171,6 +171,17 @@ ctrl + alt - 1  : yabai -m display --focus 1
 ctrl + alt - 2  : yabai -m display --focus 2
 
 ##############################################
+# Stack
+##############################################
+# Focus window up/down in stack
+ctrl + alt - n : yabai -m window --focus stack.next
+ctrl + alt - p : yabai -m window --focus stack.prev
+
+ctrl + cmd - b : yabai -m config --space $(yabai -m query --windows --space | jq '.[0].space') layout bsp
+ctrl + cmd - s : yabai -m config --space $(yabai -m query --windows --space | jq '.[0].space') layout stack
+
+
+##############################################
 # Moving
 ##############################################
 
@@ -248,14 +259,4 @@ shift + alt - right  : yabai -m window --grid 1:2:1:0:1:1
 ##############################################
 alt - h : yabai -m window --display west && yabai -m display --focus west
 alt - l : yabai -m window --display east && yabai -m display --focus east
-
-##############################################
-# Stack
-##############################################
-# Focus window up/down in stack
-ctrl + alt - n : yabai -m window --focus stack.next
-ctrl + alt - p : yabai -m window --focus stack.prev
-
-ctrl + cmd - b : yabai -m config --space $(yabai -m query --windows --space | jq '.[0].space') layout bsp
-ctrl + cmd - s : yabai -m config --space $(yabai -m query --windows --space | jq '.[0].space') layout stack
 
