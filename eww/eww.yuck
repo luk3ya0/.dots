@@ -31,7 +31,7 @@
        "󰆼 ${round(EWW_DISK["/"].used_perc, 0)}% "
        "󰍛 ${round(EWW_RAM.used_mem_perc, 0)}% "
        "󰻠 ${round(EWW_CPU.avg, 0)}% "
-       " ${round((EWW_TEMPS.CORETEMP_CORE_0+EWW_TEMPS.CORETEMP_CORE_1+EWW_TEMPS.CORETEMP_CORE_2+EWW_TEMPS.CORETEMP_CORE_3)/4, 0)}  "
+       " ${round((EWW_TEMPS.CORETEMP_CORE_0+EWW_TEMPS.CORETEMP_CORE_1+EWW_TEMPS.CORETEMP_CORE_2+EWW_TEMPS.CORETEMP_CORE_3)/4, 0)}°C "
        "󰕒 ${round(EWW_NET.eno1.NET_UP / 1000000, 2)} MB "
        "󰇚 ${round(EWW_NET.eno1.NET_DOWN / 1000000, 2)} MB"
        " "
