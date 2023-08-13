@@ -25,13 +25,13 @@ selection:
 
 font:
   normal:
-    family: Source Code Pro
+    family: terminal-font
     style: Medium
 
   bold:
-    family: Source Code Pro
+    family: terminal-font
 
   italic:
-    family: Source Code Pro
+    family: terminal-font
 
-  size: 15
+  size: 14
