@@ -190,9 +190,9 @@
     :monitor 0
     :windowtype "dock"
     :geometry (geometry :x "20px"
-                        :y "10px"
+                        :y "20px"
                         :width "3800"
-                        :height "50px"
+                        :height "60px"
                         :anchor "top center")
     :stacking "bt"
     :exclusive true
@@ -203,9 +203,9 @@
     :monitor 1
     :windowtype "dock"
     :geometry (geometry :x "20px"
-                        :y "10px"
+                        :y "20px"
                         :width "3800"
-                        :height "50px"
+                        :height "60px"
                         :anchor "top center")
     :stacking "bt"
     :exclusive true
