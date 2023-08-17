@@ -14,7 +14,7 @@
                   (sidestuff1))))
 
 (defwidget sidestuff1 []
-  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
+  (box :class "sidestuff1" :orientation "h" :space-evenly false :halign "end"
        (updates)
        (audio)
        (net)
@@ -27,7 +27,7 @@
        ))
 
 (defwidget sidestuff0 []
-  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "start"
+  (box :class "sidestuff0" :orientation "h" :space-evenly false :halign "start"
        "󰆼 ${round(EWW_DISK["/"].used_perc, 0)}% "
        "󰍛 ${round(EWW_RAM.used_mem_perc, 0)}% "
        "󰻠 ${round(EWW_CPU.avg, 0)}% "
