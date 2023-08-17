@@ -1,8 +1,8 @@
 // Config //
 configuration {
-	modi:                        "drun";
-	show-icons:                  false;
-	font:                        "JetBrainsMono Nerd Font 9";
+    modi:                        "drun";
+    show-icons:                  false;
+    font:                        "JetBrainsMono Nerd Font 9";
 }
 
 @theme "~/.config/rofi/themes/theme.rasi"
@@ -14,7 +14,7 @@ window {
     anchor:                      south east;
     x-offset:                    -20px;
     y-offset:                    -20px;
-	height:                      55%;
+    height:                      55%;
     width:                       20%;
     transparency:                "real";
     fullscreen:                  false;
@@ -34,7 +34,7 @@ mainbox {
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
     background-color:            transparent;
-	background-image:            url("~/.config/swww/wall.blur", height);
+    background-image:            url("~/.config/swww/wall.blur", height);
 }
 
 
@@ -42,8 +42,8 @@ mainbox {
 inputbar {
     enabled:                     true;
     padding:                     7px;
-	children:                    [ "entry" ];
-	background-color:            @background;
+    children:                    [ "entry" ];
+    background-color:            @background;
 }
 entry {
     border:                      3px;
@@ -52,7 +52,7 @@ entry {
     enabled:                     true;
     padding:                     70px;
     text-color:                  @foreground;
-	background-color:            @background;
+    background-color:            @background;
     background-image:            url("~/.config/swww/wall.blur", width);
 }
 
@@ -61,8 +61,8 @@ entry {
 listbox {
     spacing:                     0px;
     padding:                     10px;
-	children:                    [ "listview" ];
-	background-color:            @background;
+    children:                    [ "listview" ];
+    background-color:            @background;
 }
 listview {
     enabled:                     true;
@@ -75,7 +75,7 @@ listview {
     fixed-height:                false;
     fixed-columns:               true;
     cursor:                      "default";
-	background-color:            transparent;
+    background-color:            transparent;
     text-color:                  @foreground;
 }
 
