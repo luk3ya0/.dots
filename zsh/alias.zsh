@@ -22,5 +22,8 @@ alias vim='nvim'
 alias ls='ls -G --color'
 alias drawio='/Applications/draw.io.app/Contents/MacOS/draw.io'
 
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
 # alias go='http_proxy=http://127.0.0.1:1087/ https_proxy=http://127.0.0.1:1087/ no_proxy=localhost,127.0.0.0/8,::1 go'
 

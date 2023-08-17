@@ -13,9 +13,9 @@ export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com,www.bilibili.c
 
 # java environment
 # export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-export PATH="$PATH:$JAVA_HOME/bin"
-export CLASSPATH=".:$JAVA_HOME/lib"
+# export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+# export PATH="$PATH:$JAVA_HOME/bin"
+# export CLASSPATH=".:$JAVA_HOME/lib"
 # maven environment
 # export MAVEN_HOME="/opt/homebrew/Cellar/maven/3.8.1"
 # export PATH=$PATH:$MAVEN_HOME/bin
@@ -23,15 +23,6 @@ export CLASSPATH=".:$JAVA_HOME/lib"
 # scala environment
 # export SCALA_HOME="/Library/Scala/scala-2.13.3"
 # export PATH=$PATH:$SCALA_HOME/bin
-
-# go env
-export GO111MODULE="on"
-export GOROOT="/opt/homebrew/Cellar/go/1.19/libexec"
-export GOBIN=$GOROOT/bin
-export GOARCH=arm64
-export GOPATH=$HOME/.gopher
-export GOPROXY=https://proxy.golang.org
-export PATH="$PATH:$GOBIN:$GOPATH/bin"
 
 # rabbitmq
 # export RABBIT_HOME="/usr/local/Cellar/rabbitmq/3.8.2"
