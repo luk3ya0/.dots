@@ -3,7 +3,7 @@
 export CLICOLOR=1
 
 # enables colorfor iTerm
-export TERM=xterm-256color
+export TERM=kitty
 
 # proxy
 export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com,www.bilibili.com,pub.flutter-io.cn,storage.flutter-io.cn
@@ -46,25 +46,3 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # ctags
 alias ctags=/usr/local/bin/ctags
-
-# homebrew
-export PATH="/opt/homebrew/bin:$PATH"
-
-# using MaTex
-export PATH="/usr/local/texlive/2022/bin/universal-darwin:$PATH"
-
-# export DOCKER_HOST=ssh:luke@10.0.1.5
-
-# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-
-export PATH=/Applications/Hammerspoon.app/Contents/Frameworks/hs:$PATH
-
-# export PATH="/usr/local/mysql/bin:$PATH"
-
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-# export CC="/opt/homebrew/Cellar/gcc@11/11.3.0/bin/gcc-11"
-# export CXX="/opt/homebrew/Cellar/gcc@11/11.3.0/bin/g++-11"
-
-export PATH="/Applications/Hammerspoon.app/Contents/Frameworks/hs:$PATH"
