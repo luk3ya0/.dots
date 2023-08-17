@@ -16,5 +16,5 @@ zle -N sudo-command-line
 
 bindkey '^O' sudo-command-line
 
-bindkey -s '^g' 'ranger\n'
+bindkey -s '^g' 'export TERM=kitty; ranger\n'
 
