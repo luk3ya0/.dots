@@ -2,9 +2,9 @@
 (defwidget bar0 []
   (box :class "bar"
        (centerbox :orientation "h"
-                  (workspaces0)
+                  (sidestuff0)
                   (clock)
-                  (sidestuff0))))
+                  (sidestuff1))))
 
 (defwidget bar1 []
   (box :class "bar"
@@ -13,7 +13,7 @@
                   (clock)
                   (sidestuff1))))
 
-(defwidget sidestuff0 []
+(defwidget sidestuff1 []
   (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
        (updates)
        (audio)
@@ -26,8 +26,8 @@
        ;; (battery)
        ))
 
-(defwidget sidestuff1 []
-  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "end"
+(defwidget sidestuff0 []
+  (box :class "sidestuff" :orientation "h" :space-evenly false :halign "start"
        "󰆼 ${round(EWW_DISK["/"].used_perc, 0)}% "
        "󰍛 ${round(EWW_RAM.used_mem_perc, 0)}% "
        "󰻠 ${round(EWW_CPU.avg, 0)}% "
@@ -41,15 +41,15 @@
     "scripts/workspace.sh 0")
 
 (defwidget workspaces0 []
+  (literal :content "" :class "workspace"))
   ;; (literal :content workspace0 :class "workspace"))
-  (literal :content workspace0 :class "workspace"))
 
 (deflisten workspace1
     "scripts/workspace.sh 1")
 
 (defwidget workspaces1 []
+  (literal :content "" :class "workspace"))
   ;; (literal :content workspace1 :class "workspace"))
-  (literal :content workspace1 :class "workspace"))
 
 (defwidget language []
   (box :class "language"
