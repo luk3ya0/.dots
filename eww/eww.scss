@@ -5,7 +5,6 @@
 //Global Styles
 .bar0, .bar1 {
   border-radius: 25px;
-  background-color: #1e1e2e;
   color: #ffd5cd;
   font-family: "SF Mono", "Source Code Pro";
   font-size: 20px;
@@ -14,13 +13,21 @@
 // Styles on classes (see eww.yuck for more information)
 
 .sidestuff0 {
+  background-color: #1e1e2e;
   color: #ffd5cd;
+  opacity: 0.8;
   padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
 }
 
 .sidestuff1 {
+  background-color: #1e1e2e;
   color: #ffd5cd;
+  opacity: 0.8;
+  padding-left: 25px;
   padding-right: 25px;
+  border-radius: 25px;
 }
 
 .audio {
@@ -60,6 +67,11 @@
 
 .clock {
   color: #ffd5cd;
+  background-color: #1e1e2e;
+  opacity: 0.8;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
 }
 
 .idle {
