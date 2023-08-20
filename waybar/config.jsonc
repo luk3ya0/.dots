@@ -16,7 +16,7 @@
 
 	"modules-left": ["custom/padd","custom/l_end","wlr/workspaces","custom/r_end","","custom/padd"],
 	"modules-center": ["custom/padd","","custom/l_end","wlr/taskbar","custom/r_end","","","","","","custom/padd"],
-	"modules-right": ["custom/padd","","custom/l_end","custom/wallchange","custom/mode","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","","custom/l_end","tray","custom/r_end","custom/l_end","custom/wallchange","custom/mode","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -42,7 +42,7 @@
 	"wlr/taskbar": {
 		"format": "{icon}",
 		"icon-size": 33,
-		"icon-theme": "Tela-circle-pink",
+		"icon-theme": "Papirus-Dark",
         "spacing": 0,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
@@ -58,6 +58,11 @@
 			"jetbrains-datagrip": "datagrip"
 		}
 	},
+
+    "tray": {
+        "icon-size": 33,
+        "spacing": 5
+    },
 
     "custom/wallchange": {
         "format": "{}",

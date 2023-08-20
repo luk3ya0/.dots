@@ -7,7 +7,7 @@
     min-height: 10px;
 }
 
-@import "themes/Rose-Pine.css";
+@import "themes/Tokyo-Night.css";
 
 window#waybar {
     background: @bar-bg;
