@@ -7,7 +7,7 @@
     min-height: 10px;
 }
 
-@import "themes/Tokyo-Night.css";
+@import "themes/Decay-Green.css";
 
 window#waybar {
     background: @bar-bg;
@@ -24,7 +24,7 @@ tooltip {
 
 #workspaces button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 16px;
     margin-top: 5px;
@@ -58,7 +58,7 @@ tooltip {
 
 #taskbar button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 16px;
     margin-top: 5px;
