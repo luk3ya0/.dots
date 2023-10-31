@@ -42,7 +42,7 @@
 	"wlr/taskbar": {
 		"format": "{icon}",
 		"icon-size": 33,
-		"icon-theme": "Papirus-Dark",
+		"icon-theme": "Gruvbox-Plus-Dark",
         "spacing": 0,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
