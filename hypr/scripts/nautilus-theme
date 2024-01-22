@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'//g") && exec /usr/bin/nautilus "$@" &
