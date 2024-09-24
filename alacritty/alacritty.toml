@@ -1,0 +1,25 @@
+import = ["/home/luke/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[font]
+size = 9
+
+[font.bold]
+family = "terminal-font"
+
+[font.italic]
+family = "terminal-font"
+
+[font.normal]
+family = "terminal-font"
+style = "Medium"
+
+[selection]
+save_to_clipboard = true
+
+[window.dimensions]
+columns = 177
+lines = 50
+
+[window.padding]
+x = 5
+y = 5
