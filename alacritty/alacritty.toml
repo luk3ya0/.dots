@@ -1,4 +1,4 @@
-import = ["/home/luke/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = ["/home/luke/.config/alacritty/themes/gruvbox-dark.toml"]
 
 [font]
 size = 9
@@ -23,3 +23,6 @@ lines = 50
 [window.padding]
 x = 5
 y = 5
+
+[keyboard]
+bindings = [{ key = "T", mods = "Command", action = "CreateNewWindow" }]
