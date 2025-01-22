@@ -17,6 +17,10 @@ some dot configuration for mac and linux
 - zsh-syntax-hightlighting - brew install zsh-syntax-hightlighting
 - zsh-history-substring-search - brew install zsh-history-substring-search
 
+### For font that support powerline and nerd
+
+brew install font-meslo-for-powerlevel10k
+
 ### For bin
 
 there are some trick script
