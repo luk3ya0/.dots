@@ -12,10 +12,10 @@ some dot configuration for mac and linux
 
 ### For zsh
 
-- zsh-autocompletions
-- zsh-completions
-- zsh-syntax-hightlighting
-- oh-my-zsh
+- powerlevel10 - brew install powerlevel10k
+- zsh-autosuggestions - brew install zsh-autosuggestions
+- zsh-syntax-hightlighting - brew install zsh-syntax-hightlighting
+- zsh-history-substring-search - brew install zsh-history-substring-search
 
 ### For bin
 

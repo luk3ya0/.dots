@@ -1,9 +1,11 @@
+eval "$(/usr/local/bin/brew shellenv)"
+
 # ####### export critical environment variable #######
 # enables colorin the terminal bash shell export
 export CLICOLOR=1
 
 # enables colorfor iTerm
-export TERM=kitty
+# export TERM=kitty
 
 # proxy
 export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com,www.bilibili.com,pub.flutter-io.cn,storage.flutter-io.cn
@@ -44,5 +46,21 @@ export EDITOR=nvim
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# ctags
-alias ctags=/usr/local/bin/ctags
+# docker
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/luke/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/luke/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/luke/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/luke/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
